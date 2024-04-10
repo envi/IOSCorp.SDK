@@ -1,21 +1,20 @@
 ﻿using Newtonsoft.Json;
 
-namespace Envi.SDK
+namespace Envi.SDK;
+
+/// <summary>
+/// Class ODataSingleValueResponse.
+/// </summary>
+public class ODataSingleValueResponse<T>
 {
 	/// <summary>
-	/// Class ODataSingleValueResponse.
+	/// Gets or sets the odata context.
 	/// </summary>
-	public class ODataSingleValueResponse<T>
-	{
-		/// <summary>
-		/// Gets or sets the odata context.
-		/// </summary>
-		[JsonProperty("@odata.context")]
-		public string ODataContext { get; set; }
+	[JsonProperty("@odata.context")]
+	public string ODataContext { get; set; }
 
-		/// <summary>
-		/// Gets or sets the value.
-		/// </summary>
-		public T Value { get; set; }
-	}
+	/// <summary>
+	/// Gets or sets the value.
+	/// </summary>
+	public T Value { get; set; }
 }

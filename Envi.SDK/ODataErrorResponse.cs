@@ -1,16 +1,15 @@
 ﻿using Newtonsoft.Json;
 
-namespace Envi.SDK
+namespace Envi.SDK;
+
+/// <summary>
+/// Class ODataErrorResponse.
+/// </summary>
+class ODataErrorResponse
 {
 	/// <summary>
-	/// Class ODataErrorResponse.
+	/// Gets or sets the description.
 	/// </summary>
-	class ODataErrorResponse
-	{
-		/// <summary>
-		/// Gets or sets the description.
-		/// </summary>
-		[JsonProperty("value")]
-		public string Description { get; set; }
-	}
+	[JsonProperty("value")]
+	public string Description { get; set; }
 }
